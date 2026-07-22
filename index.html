@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarojini Nayak — Full-Stack Developer</title>
+<meta name="description" content="Sarojini Nayak — MERN stack developer building AI-powered web experiences. View my projects and resume.">
+<meta property="og:title" content="Sarojini Nayak — Full-Stack Developer">
+<meta property="og:description" content="Full stack developer building AI-powered web experiences. View my projects and resume.">
+<meta property="og:image" content="images/user.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="logo">SN<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="container hero-content">
+    <div class="hero-role"><span id="typed-role">Full-Stack Developer</span><span class="cursor-blink"></span></div>
+    <h2 class="hero-title">HI, I'M <span class="accent-text">SAROJINI</span> —<br>FULL-STACK DEV</h2>
+    <p class="hero-desc">TURNING IDEAS INTO REAL WEB EXPERIENCES</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="images/Sarojini Nayak_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">View Resume</a>
+    </div>
+    <div class="hero-meta">
+      <div>Status — <b>Open to work</b></div>
+    </div>
+  </div>
+</section>
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+  <img src="images/user.png" alt="Sarojini Nayak" class="about-photo">
+</div>
+      <div class="about-body reveal">
+        <div class="eyebrow">About Me</div>
+        <h2 class="section-title">I like building things that actually ship.</h2>
+        <p>I'm a full-stack developer working across the MERN stack — React and Node on top, MongoDB and Express underneath — with production experience in JWT/OAuth authentication, payment gateway integration, and AI-powered features. I've shipped platforms like Lumière, a multi-gateway e-commerce site with a full admin suite, and Roamly, an AI trip planner built on Gemini. I care about code that holds up outside a tutorial — clean, tested, and actually deployed. Currently looking for a full-stack role where I can keep building things that ship.</p>
+        <div class="about-education">
+          <div class="edu-degree">B.Tech in Computer Science Engineering</div>
+          <div class="edu-school">GIFT Autonomous, Bhubaneswar</div>
+          <div class="edu-meta">
+            <span>2022 – 2026</span>
+            <span class="edu-dot">•</span>
+            <span>CGPA: 8.08/10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Projects</div>
+      <h2 class="section-title">Featured work.</h2>
+      <p class="section-sub">Full-stack builds, deployed and functional.</p>
+    </div>
+
+
+    <div class="projects-grid">
+      <div class="project-card" data-cat="ecommerce fullstack">
+        <div class="project-media">
+          <img src="images/lumiere.png" alt="Lumière e-commerce site screenshot" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <a href="https://lumiere-maison.vercel.app/" target="_blank" rel="noopener" class="project-badge badge-live">Live</a>
+          </div>
+          <h3>Lumière — E-Commerce Website</h3>
+           <p>A luxury e-commerce platform with 360° product views, multi-gateway checkout (Stripe + Razorpay + COD), and a full admin suite — live sales analytics, inventory, coupons, CMS. Auth is locked down with JWT, Google OAuth, and email OTP.</p>
+          <div class="project-tags"><span>React</span><span>Redux</span><span>Express</span><span>MongoDB</span><span>Razorpay</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="ai fullstack">
+        <div class="project-media">
+          <img src="images/roamly.png" alt="Roamly AI trip planner screenshot" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <a href="https://roamly-trip.vercel.app" target="_blank" rel="noopener" class="project-badge badge-live">Live</a>
+          </div>
+          <h3>Roamly — AI Trip Planner</h3>
+          <p>Turns a single prompt into a full trip plan — Gemini AI drafts the itinerary, a Three.js globe renders it in 3D, Leaflet maps the routes, and live weather plus one-click PDF export make it something you'd actually use.</p>
+          <div class="project-tags"><span>MERN</span><span>Gemini AI</span><span>Three.js</span><span>Leaflet</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="frontend">
+        <div class="project-media">
+          <img src="images/portfolio.png" alt="Personal portfolio site screenshot" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <a href="https://roamly-trip.vercel.app" target="_blank" rel="noopener" class="project-badge badge-live">Live</a>
+          </div>
+          <h3>Personal Portfolio</h3>
+          <p>This site — the one you're on — runs entirely on hand-written HTML, CSS, and JavaScript: custom cursor, scroll reveals, live filtering, animated counters, all built from scratch to prove the fundamentals hold up.</p>
+          <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>Vanilla JS</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Skills</div>
+      <h2 class="section-title">What I work with.</h2>
+      <p class="section-sub">A stack built for shipping full products, not just prototypes.</p>
+    </div>
+    <div class="skills-grid reveal-stagger reveal">
+      <div class="skill-card stagger-item">
+        <h4><span class="dot"></span>Languages & Analytics</h4>
+        <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Power BI</span><span>Tableau</span></div>
+      </div>
+      <div class="skill-card stagger-item">
+        <h4><span class="dot"></span>Frontend</h4>
+        <div class="skill-tags"><span>React</span><span>Tailwind CSS</span><span>Framer Motion</span><span>Redux</span><span>Axios</span><span>React Hook</span><span>Three.js</span></div>
+      </div>
+      <div class="skill-card stagger-item">
+        <h4><span class="dot"></span>Backend & Data</h4>
+        <div class="skill-tags"><span>Node.js</span><span>Express</span><span>JWT Auth</span><span>Google OAuth</span><span>Nodemailer</span><span>MongoDB</span><span>Mongoose</span></div>
+      </div>
+      <div class="skill-card stagger-item">
+        <h4><span class="dot"></span>Tools & Integrations</h4>
+        <div class="skill-tags"><span>Vercel</span><span>Render</span><span>Git/GitHub</span><span>Razorpay</span><span>Stripe</span><span>Cloudinary</span><span>Gemini AI</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / TIMELINE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Experience</div>
+      <h2 class="section-title">Where I've worked.</h2>
+      <p class="section-sub">Internships where I applied the MERN stack and Java to real projects.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-date">Oct 2025 – Feb 2026</div>
+        <h4>MERN Stack Intern — MoovOn Services and Solutions</h4>
+        <p class="timeline-location">Bhubaneswar, Odisha</p>
+        <ul class="timeline-list">
+           <p>Built full-stack web applications using the MERN stack, working across the frontend and backend. I developed REST APIs with CRUD functionality and designed responsive interfaces in React, making sure the UI stayed clean and usable across devices.</p>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">June 2024 – July 2024</div>
+        <h4>MERN Stack Intern — Technoboot Pvt. Ltd.</h4>
+        <p class="timeline-location">Bhubaneswar, Odisha</p>
+        <ul class="timeline-list">
+          <p>Assisted in building web applications with MongoDB, Express.js, React.js, and Node.js, focusing mainly on creating responsive UI components. I also worked on connecting the frontend to a MongoDB database through backend APIs, which gave me a solid grasp of how the full stack fits together.</p>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">June 2023 – July 2023</div>
+        <h4>Java Intern — OCAC Training Center</h4>
+        <p class="timeline-location">Bhubaneswar, Odisha</p>
+        <ul class="timeline-list">
+          <p>Developed applications using Core Java and object-oriented programming concepts, with a strong focus on debugging and testing to ensure the code ran accurately and efficiently. This was my first real hands-on experience writing production-style code.</p>
+</div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Certifications</div>
+      <h2 class="section-title">Backed by credentials.</h2>
+      <p class="section-sub">NPTEL certifications validating my foundational knowledge beyond web development.</p>
+    </div>
+    <div class="cert-grid reveal-stagger reveal">
+      <div class="cert-card stagger-item">
+        <div class="cert-header">
+          <h4>Cloud Computing</h4>
+          <a href="https://nptel.ac.in/noc/E_Certificate/NPTEL25CS11S94290029004250445" target="_blank" rel="noopener" class="cert-badge">
+            NPTEL
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+</a>
+        </div>
+        <p class="cert-desc">Cloud service models, virtualization, and deployment architecture — the fundamentals behind hosting and scaling the projects I build.</p>
+        <p class="cert-meta">Elective, 2025 · IIT Kharagpur</p>
+        <div class="cert-badges">
+          <span class="cert-badge-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Elite + Silver
+          </span>
+        </div>
+      </div>
+      <div class="cert-card stagger-item">
+       <div class="cert-header">
+          <h4>Industry 4.0 and Industrial Internet of Things</h4>
+          <a href="https://nptel.ac.in/noc/E_Certificate/NPTEL25CS11S94290029004250445" target="_blank" rel="noopener" class="cert-badge">
+  NPTEL
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+</a>
+        </div>
+        <p class="cert-desc">IoT, automation, and cyber-physical systems driving smart manufacturing — the broader context behind connected, data-driven infrastructure.</p>
+        <p class="cert-meta">Elective, 2024 · IIT Kharagpur</p>
+        <div class="cert-badges">
+          <span class="cert-badge-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Elite + Silver
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="eyebrow">Contact</div>
+        <h2 class="section-title">Let's build something.</h2>
+        <p class="section-sub">Open to full-stack roles and internships — reach out directly or use the form.</p>
+        <div class="contact-links">
+          <a href="mailto:sarojininayak2022@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l9 7 9-7M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z"/></svg>
+            sarojininayak2022@gmail.com
+          </a>
+          <a href="https://github.com/Sarojini-Nayak" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.71c-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05a9.3 9.3 0 015 0c1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.62.71 1 1.63 1 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            github.com/Sarojini-Nayak
+          </a>
+          <a href="https://www.linkedin.com/in/sarojini-nayak-07b600322" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18.34V9.75H5.67v8.59h2.67zM7 8.63a1.55 1.55 0 100-3.1 1.55 1.55 0 000 3.1zm11.34 9.71v-4.7c0-2.52-1.35-3.69-3.15-3.69a2.72 2.72 0 00-2.46 1.35h-.04V9.75H10v8.59h2.67v-4.25c0-1.12.21-2.2 1.6-2.2 1.37 0 1.39 1.28 1.39 2.27v4.18h2.68z"/></svg>
+            linkedin.com/in/sarojini-nayak
+          </a>
+        </div>
+        <a href="images/Sarojini Nayak_Resume.pdf" download class="btn btn-primary resume-btn">
+          Download Resume
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        </a>
+      </div>
+
+      <form class="reveal" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="f-name">Name</label>
+          <input type="text" id="f-name" name="name" placeholder="Your name">
+          <div class="form-error" id="err-name">Please enter your name.</div>
+        </div>
+        <div class="form-group">
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" name="email" placeholder="you@company.com">
+          <div class="form-error" id="err-email">Please enter a valid email.</div>
+        </div>
+        <div class="form-group">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" placeholder="What are you looking to build?"></textarea>
+          <div class="form-error" id="err-message">Message can't be empty.</div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="border:none;">Send Message →</button>
+        <div id="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p>© 2026 Sarojini Nayak.</p>
+    <div class="footer-links">
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
