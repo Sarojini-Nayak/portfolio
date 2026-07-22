@@ -289,8 +289,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;letter-spacing:-0.01
   }
 }
 .about-visual .about-photo{
-  width:350px;
-  height:350px;
+  width:300px;
+  height:300px;
   max-width:100%;
   aspect-ratio:1/1;
   border-radius:50%;
@@ -624,5 +624,20 @@ footer{border-top:1px solid var(--border);padding:48px 0;}
   }
   .hero-actions{
     margin-bottom:32px;
+    flex-wrap:nowrap;
+    gap:10px;
+  }
+  .hero-actions .btn{
+    flex:0 1 auto;
+    padding:12px 14px;
+    font-size:12px;
+    white-space:nowrap;
+  }
+}
+
+@media (min-width:601px) and (max-width:1024px) {
+  #hero{
+    background-size:cover;
+    background-position:right center;
   }
 }
