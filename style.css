@@ -594,12 +594,14 @@ footer{border-top:1px solid var(--border);padding:48px 0;}
 /* ---------- hero: mobile override (must stay AFTER the desktop #hero rules above) ---------- */
 @media (max-width:768px){
   #hero{
+    min-height:100svh;
+    padding-top:100px;
+    padding-bottom:32px;
     background-position:right bottom;
     background-size:auto 115%;
     background-image:
       linear-gradient(to top, rgba(13,13,13,0.97) 0%, rgba(13,13,13,0.85) 22%, rgba(13,13,13,0) 42%, rgba(13,13,13,0) 100%),
       url('images/phone.jpeg');
-    padding-bottom:40px;
   }
   #hero .container{
     padding-left:16px;
@@ -607,5 +609,20 @@ footer{border-top:1px solid var(--border);padding:48px 0;}
   }
   .hero-grid{
     display:none;
+  }
+  .hero-role{
+    font-size:14px;
+    margin-bottom:16px;
+  }
+  .hero-title{
+    font-size:clamp(28px,8vw,36px);
+    margin-bottom:20px;
+  }
+  .hero-desc{
+    font-size:15px;
+    margin-bottom:28px;
+  }
+  .hero-actions{
+    margin-bottom:32px;
   }
 }
