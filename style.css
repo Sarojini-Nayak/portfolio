@@ -398,8 +398,10 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;letter-spacing:-0.01
   font-family:var(--font-mono);font-size:10.5px;font-weight:600;
   letter-spacing:0.06em;text-transform:uppercase;
   padding:5px 12px;border-radius:100px;
+  display:inline-flex;align-items:center;gap:5px;
 }
 .badge-live{background:rgba(16,185,129,0.12);color:#34D399;border:1px solid rgba(16,185,129,0.25);}
+.badge-icon{flex-shrink:0;}
 
 .project-icon-links{display:flex;gap:10px;}
 .project-icon-links a{
@@ -415,7 +417,6 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;letter-spacing:-0.01
 .project-body p{color:var(--text-muted);font-size:13.5px;line-height:1.55;margin-bottom:14px;text-align:justify;hyphens:auto;}
 .project-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
 .project-tags span{font-family:var(--font-mono);font-size:10.5px;color:var(--text-dim);border:1px solid var(--border);padding:4px 9px;border-radius:5px;}
-
 /* ---------- timeline ---------- */
 .timeline{position:relative;padding-left:40px;}
 .timeline::before{content:'';position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--accent),var(--border) 90%);}
