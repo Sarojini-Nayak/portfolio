@@ -38,7 +38,7 @@
   });
 
   /* ---------- hero typing animation ---------- */
-  var roles = ['FullStack Web Developer', 'MERN Stack Developer', 'Frontend Developer', 'React Developer'];
+  var roles = ['Data Analyst', 'Business Analyst', 'Python & SQL', 'Power BI & Excel', 'Turning Data Into Decisions'];
   var typedEl = document.getElementById('typed-role');
   var ri=0, ci=0, deleting=false;
   function typeLoop(){
